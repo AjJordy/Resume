@@ -2,7 +2,7 @@ body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0px;
   color: #141414;
-  margin-bottom: 1000px;
+  height: 100%;
 }
 
 h1,
@@ -24,18 +24,26 @@ img {
 }
 
 .container {
-	max-width: 1200px;
-	padding: 40px 20px;
-	margin: 0 auto;
-	display: grid; 
-	grid-template-columns: 1fr 2fr;
-	gap: 100px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
 }
 
 .subtitulo {
-  font-size:8rem;
+  font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
   word-break: break-all;
   max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
 }
